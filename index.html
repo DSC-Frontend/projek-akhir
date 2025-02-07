@@ -3,14 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website</title>
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Ibrhm | Portofolio</title>
+    <!-- icon website -->
+    <link rel="icon" href="asset/user.png">
+    <!-- link css -->
     <link rel="stylesheet" href="style.css">
+    <!-- cdn fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- cdn remixicon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <!-- cdn aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar">
-        <div class="logo">Ibrm</div>
+    <nav class="navbar" data-aos="fade-down" data-aos-duration="500" data-aos-delay="800">
+        <div class="logo gap-2 items-center">
+            <h1 class="name-logo">
+                <a href="#home">Ibrhm</a>
+            </h1>
+            <i class="ri-user-2-fill -order-1"></i>
+        </div>
         <div class="hamburger">
             <span class="bar"></span>
             <span class="bar"></span>
@@ -18,130 +33,166 @@
         </div>
         <ul class="nav-menu">
             <li><a href="#home" class="nav-link">Home</a></li>
-            <li><a href="#features" class="nav-link">Features</a></li>
-            <li><a href="#services" class="nav-link">Services</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#assigment" class="nav-link">Assigment</a></li>
             <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Welcome to Your Website</h1>
-            <p>Create something amazing with our services</p>
-            <a href="#contact" class="cta-button">Get Started</a>
+    <section id="home" class="hero gap-12 items-center justify-center h-screen text-white bg-slate-600 md:flex">
+        <div class="image-content my-8 md:order-1">
+            <img src="asset/Profile.jpg" alt="profile" class="img-logo w-40 grayscale hover:scale-105 hover:grayscale-0 transition duration-500 ease-in-out mx-auto md:w-64 rounded-3xl shadow-lg shadow-slate-700">
+        </div>
+        <div class="hero-content text-center md:w-1/2 md:text-start slide-up">
+            <h1 class="text-4xl font-bold md:text-8xl">Iib Ibrahim</h1>
+            <p class="text-lg font-sans mt-5 mb-8 font-light">Mahasiswa Universitas Bhayangkara Jakarta Raya Fakultas Ilmu Komputer Program Studi Informatika</p>
+            <a href="#about" class="cta-button transition-all duration-300 ease-in-out text-white py-2 px-4 rounded-xl hover:scale-105"><i class="fa-solid fa-arrow-down"></i> Scroll Down
+            </a>
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section id="features" class="features">
-        <h2>Our Features</h2>
+    <!-- About Me Section -->
+    <section id="about" class="about-me">
+        <h2 class="font-bold text-4xl md:text-5xl mb-8" data-aos="fade-up" data-aos-duration="900">About Me</h2>
         <div class="features-grid">
-            <div class="feature-card">
-                <i class="fas fa-rocket"></i>
-                <h3>Fast & Reliable</h3>
-                <p>Experience lightning-fast performance and reliable service.</p>
+            <div class="feature-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50">
+                <i class="fa-solid fa-person"></i>
+                <h3 class="font-serif font-semibold">It's me</h3>
+                <p class="text-justify">Hello World! Saya Iib Ibrahim, seorang mahasiswa <span class="font-bold">Informatika</span> di <span class="font-bold">Universitas Bhayangkara Jakarta Raya.</span> Saat ini saya memiliki minat di bidang Web Development dan Data Science, dan senang belajar serta mengembangkan keterampilan di bidang ini.</p>
             </div>
-            <div class="feature-card">
-                <i class="fas fa-shield-alt"></i>
-                <h3>Secure</h3>
-                <p>Your security is our top priority with advanced protection.</p>
-            </div>
-            <div class="feature-card">
-                <i class="fas fa-users"></i>
-                <h3>User Friendly</h3>
-                <p>Intuitive design that makes everything easier.</p>
-            </div>
-            <div class="feature-card">
-                <i class="fas fa-clock"></i>
-                <h3>24/7 Support</h3>
-                <p>Round-the-clock support whenever you need it.</p>
-            </div>
+            <div class="feature-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="450">
+                <i class="fa-brands fa-leanpub"></i>
+                <h3 class="font-serif font-semibold">Learning</h3>
+                <div class="text-start">
+                    <div class="w-full text-center justify-around flex gap-2">
+                        <div class="language">
+                            <i class="fa-brands fa-uncharted text-sm"></i>
+                            <h4 class="font-bold text-lg">Language & Framework</h4>
+                            <ul class="List-Learning">
+                                <li>
+                                    <p>HTML</p>
+                                </li>
+                                <li>
+                                    <p>CSS</p>
+                                </li>
+                                <li>
+                                    <p>Javascript</p>
+                                </li>
+                                <li>
+                                    <p>TailwindCSS</p>
+                                </li>
+                                <li>
+                                    <p>Basic Python</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="Tools">
+                            <i class="fa-solid fa-gear text-sm"></i>
+                            <h4 class="font-bold text-lg">Tools</h4>
+                            <ul class="List-Learning">
+                                <li>
+                                    <p>Visual Studio Code</p>
+                                </li>
+                                <li>
+                                    <p>Git</p>
+                                </li>
+                                <li>
+                                    <p>Github</p>
+                                </li>
+                                <li>
+                                    <p>Canva</p>
+                                </li>
+                                <li>
+                                    <p>Looker Studio</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <h2>Our Services</h2>
-        <div class="services-grid">
-            <div class="service-card">
-                <img src="https://via.placeholder.com/300x200" alt="Service 1">
-                <h3>Service One</h3>
-                <p>Comprehensive solution for your needs.</p>
-                <a href="#" class="service-btn">Learn More</a>
+    <!-- Assigment Section -->
+    <section id="assigment" class="services">
+        <h2 class="font-bold text-4xl md:text-5xl mb-8" data-aos="fade-right" data-aos-duration="1000">My Assigment</h2>
+        <div class="services-grid" data-aos="fade-up" data-aos-duration="1000">
+            <div class="service-card flex flex-col">
+                <img src="asset/Fudo.png" alt="assigment 1" class="object-cover md:object-top hover:object-center transition-all duration-500 ease-in-out">
+                <div class="assigment-text">
+                    <h3 class="font-bold text-xl">Website Fudo</h3>
+                    <p class="text-justify">Website ini dibuat sebagai latihan dalam <span class="font-bold">UKM Developer Student Club (DSC)</span> pada divisi <span class="font-bold">Front End</span> untuk meningkatkan keterampilan dalam pengembangan antarmuka pengguna. Website ini dibangun menggunakan HTML5, JavaScript, dan Tailwind CSS.</p>
+                </div>
+                <div class="assigment-button mt-auto">
+                    <a href="https://ibrhm1.github.io/Pertemuan-4_FrontEnd_Tailwind/" class="service-btn text-sm rounded-full" target="_blank">Kunjungi Website</a>
+                    <a href="https://github.com/Ibrhm1/Pertemuan-4_FrontEnd_Tailwind" class="text-2xl align-middle" target="_blank" title="Source Code"><i class="fa-solid fa-code"></i></a>
+                </div>
             </div>
-            <div class="service-card">
-                <img src="https://via.placeholder.com/300x200" alt="Service 2">
-                <h3>Service Two</h3>
-                <p>Professional support and guidance.</p>
-                <a href="#" class="service-btn">Learn More</a>
-            </div>
-            <div class="service-card">
-                <img src="https://via.placeholder.com/300x200" alt="Service 3">
-                <h3>Service Three</h3>
-                <p>Innovative solutions for modern problems.</p>
-                <a href="#" class="service-btn">Learn More</a>
+            <div class="service-card bottom-0 flex flex-col ">
+                <img src="asset/Sudoku.png" alt="assigment 2" class="object-cover object-top hover:object-center transition-all duration-500 ease-in-out">
+                <div class="assigment-text">
+                    <h3 class="font-bold text-xl">Sudoku</h3>
+                    <p class="text-justify">Website ini dibuat untuk memenuhi tugas kelompok dari mata kuliah <span class="font-bold">Rekayasa Perangkat Lunak.</span> Web ini dibuat dengan HTML, CSS, dan JavaScript.</p>
+                </div>
+                <div class="assigment-button mt-auto">
+                    <a href="https://ibrhm1.github.io/Sudoku/" class="service-btn text-sm rounded-full" target="_blank">Kunjungi Website</a>
+                    <a href="https://github.com/Ibrhm1/Sudoku" class="text-2xl align-middle" target="_blank" title="Source Code"><i class="fa-solid fa-code"></i></a>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-        <h2>Contact Us</h2>
+        <h2 class="font-bold text-5xl mb-8" data-aos="zoom-in-down" data-aos-duration="1000">Contact</h2>
         <div class="contact-content">
-            <div class="contact-info">
-                <div class="contact-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <p>123 Business Street, City, Country</p>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-phone"></i>
-                    <p>+1 234 567 890</p>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <p>info@yourcompany.com</p>
-                </div>
+            <div class="contact-info text-start justify-center" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
+                <ul class="contact-sosial-media-list text-3xl">
+                    <li>
+                        <a href="mailto:iibibrahim2201@gmail.com" target="_blank" class="flex gap-2 items-center mb-2">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p class="text-base">iibibrahim2201@gmail.com</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/iibibrhm/" target="_blank" class="flex gap-2 items-center mb-2">
+                            <i class="fab fa-instagram"></i>
+                            <p class="text-base">@iibibrhm</p>
+                        <a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Ibrhm1" target="_blank" class="flex gap-2 items-center mb-2">
+                            <i class="fa-brands fa-github"></i>
+                            <p class="text-base">Ibrhm1</p>
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <form>
-                <input type="text" placeholder="Name" required>
-                <input type="email" placeholder="Email" required>
-                <textarea placeholder="Message" required></textarea>
-                <button type="submit" class="cta-button">Send Message</button>
-            </form>
+            <div class="contact-image -order-1" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
+                <img src="asset/social-media.png" alt="sosial-media">
+            </div>
         </div>
     </section>
 
+    <!-- footer -->
     <footer>
         <div class="footer-content">
-            <div class="footer-section">
-                <h4>About Us</h4>
-                <p>Your trusted partner in delivering quality services and solutions.</p>
-            </div>
-            <div class="footer-section">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Follow Us</h4>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                </div>
+            <div class="footer-section text-center">
+                <h4 class="text-center font-mono font-light"><span class="italic">"Yang Sudah Boleh Pulang"</span> - Pak Sujud</h4>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Your Company. All rights reserved.</p>
+        <div class="footer-bottom text-center">
+            <p class="font-extralight">&copy; 2025 - Ibrhm</p>
         </div>
     </footer>
 
+    <!-- Javascript -->
     <script src="script.js"></script>
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- aos init -->
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
