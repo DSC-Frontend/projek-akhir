@@ -46,3 +46,51 @@ window.addEventListener('scroll', () => {
         navbar.style.boxShadow = 'none';
     }
 });
+
+// Video slider
+
+const btns = document.querySelectorAll(".nav-btn");
+const slides = document.querySelectorAll(".video-slide");
+let currentSlide = 0;
+let autoSlideInterval;
+
+var sliderNav = function (manual) {
+    btns.forEach((btn) => {
+        btn.classList.remove("active");
+    });
+
+    slides.forEach((slide) => {
+        slide.classList.remove("active");
+    });
+
+    btns[manual].classList.add("active");
+    slides[manual].classList.add("active");
+
+    // reset slide
+    clearInterval(autoSlideInterval);
+    autoSlideInterval = setInterval(nextSlide, 5000); 
+}
+
+function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length; 
+    sliderNav(currentSlide);
+}
+
+// inisiasi auto slide
+autoSlideInterval = setInterval(nextSlide, 2000);
+
+btns.forEach((btn, i) => {
+    btn.addEventListener("click", () => {
+        sliderNav(i);
+    });
+});
+
+
+slides.forEach((slide) => {
+    slide.addEventListener('transitionend', () => {
+        if (slide.classList.contains('active')) {
+            slide.currentTime = 0; // Reset video ke awal
+            slide.play(); // Mulai video
+        }
+    });
+});

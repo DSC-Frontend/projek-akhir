@@ -3,7 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bob</title>
+    <title>SyafaAliAzmi</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -13,7 +22,7 @@
   <body>
     <!-- Navbar -->
     <nav class="navbar">
-      <div class="logo">Bob Company</div>
+      <a class="logo" href="#home">Bob<span>Company</span></a>
       <div class="hamburger">
         <span class="bar"></span>
         <span class="bar"></span>
@@ -21,89 +30,115 @@
       </div>
       <ul class="nav-menu">
         <li><a href="#home" class="nav-link">Home</a></li>
-        <li><a href="#features" class="nav-link">Features</a></li>
-        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#capabilities" class="nav-link">Capabilities</a></li>
+        <li><a href="#priority" class="nav-link">Priority</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+      <video class="video-slide active" src="img/1.mp4" autoplay loop muted></video>
+      <video class="video-slide" src="img/2.mp4" autoplay loop muted></video>
+      <video class="video-slide" src="img/3.mp4" autoplay loop muted></video>
       <div class="hero-content">
-        <h1>Welcome to Your Website</h1>
-        <p>Create something amazing with our services</p>
-        <a href="#contact" class="cta-button">Get Started</a>
+        <h1>Welcome to MyWebsite</h1>
+        <p>
+          Halo Saya Syafa Ali Azmi,<br />
+          Senang bertemu dengan mu.
+        </p>
+        <a href="https://www.instagram.com/aliiueo/" class="cta-button">More</a>
+      </div>
+      <div class="nav-slider">
+        <div class="nav-btn active"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
       </div>
     </section>
 
     <!-- Features Section -->
-    <section id="features" class="features">
-      <h2>Our Features</h2>
+    <section id="capabilities" class="features">
+      <h2>My Capabilities</h2>
       <div class="features-grid">
         <div class="feature-card">
           <i class="fas fa-rocket"></i>
-          <h3>Fast & Reliable</h3>
-          <p>Experience lightning-fast performance and reliable service.</p>
+          <h3>Hard Skill</h3>
+          <p>
+            master a particular programming language and Proficient in operating
+            certain machine tools or technologies.
+          </p>
         </div>
         <div class="feature-card">
-          <i class="fas fa-shield-alt"></i>
-          <h3>Secure</h3>
-          <p>Your security is our top priority with advanced protection.</p>
+          <i class="fas fa-gear"></i>
+          <h3>Soft Skill</h3>
+          <p>Ability to work in a team and collaborate with others.</p>
         </div>
         <div class="feature-card">
           <i class="fas fa-users"></i>
-          <h3>User Friendly</h3>
-          <p>Intuitive design that makes everything easier.</p>
+          <h3>Organitation</h3>
+          <p>Efficiency and effectiveness of productivity flow</p>
         </div>
         <div class="feature-card">
-          <i class="fas fa-clock"></i>
-          <h3>24/7 Support</h3>
-          <p>Round-the-clock support whenever you need it.</p>
+          <i class="fas fa-user"></i>
+          <h3>Personal</h3>
+          <p>
+            Critical and analytical thinking skills and Curiosity and enthusiasm
+            for continuous learning.
+          </p>
         </div>
       </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="services">
-      <h2>Our Services</h2>
+    <section id="priority" class="services">
+      <h2>My Priority</h2>
       <div class="services-grid">
         <div class="service-card">
-          <img src="https://via.placeholder.com/300x200" alt="Service 1" />
-          <h3>Service One</h3>
-          <p>Comprehensive solution for your needs.</p>
-          <a href="#" class="service-btn">Learn More</a>
+          <img
+            src="https://i.pinimg.com/474x/64/e4/b2/64e4b2e74f43fc222e363a9fb17341ad.jpg"
+            alt="Service 1"
+          />
+          <h3>God</h3>
+          <p>Because "Allah is the best of planners".</p>
+          <a href="#contact" class="service-btn">More</a>
         </div>
         <div class="service-card">
-          <img src="https://via.placeholder.com/300x200" alt="Service 2" />
-          <h3>Service Two</h3>
-          <p>Professional support and guidance.</p>
-          <a href="#" class="service-btn">Learn More</a>
+          <img
+            src="https://i.pinimg.com/474x/9d/ac/47/9dac479a74640eb3cbab7208013bf4dd.jpg"
+            alt="Service 2"
+          />
+          <h3>Family</h3>
+          <p>Where life begins and love never ends.</p>
+          <a href="#contact" class="service-btn">More</a>
         </div>
         <div class="service-card">
-          <img src="https://via.placeholder.com/300x200" alt="Service 3" />
-          <h3>Service Three</h3>
-          <p>Innovative solutions for modern problems.</p>
-          <a href="#" class="service-btn">Learn More</a>
+          <img
+            src="https://i.pinimg.com/originals/07/58/49/075849c4c046e7b2951a31b0df30da06.gif"
+            alt="Service 3"
+          />
+          <h3>Girls</h3>
+          <p>Akh never mind..</p>
+          <a href="#contact" class="service-btn">More</a>
         </div>
       </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-      <h2>Contact Us</h2>
+      <h2>Contact Me</h2>
       <div class="contact-content">
         <div class="contact-info">
           <div class="contact-item">
             <i class="fas fa-map-marker-alt"></i>
-            <p>123 Business Street, City, Country</p>
+            <p>Jl. Pahlawan No. 1, Jakarta</p>
           </div>
           <div class="contact-item">
             <i class="fas fa-phone"></i>
-            <p>+1 234 567 890</p>
+            <p>+62 852 1557 1573</p>
           </div>
           <div class="contact-item">
             <i class="fas fa-envelope"></i>
-            <p>info@yourcompany.com</p>
+            <p>info@Bobcompany.com</p>
           </div>
         </div>
         <form>
@@ -114,39 +149,40 @@
         </form>
       </div>
     </section>
-
+    <!-- Footer -->
     <footer>
       <div class="footer-content">
         <div class="footer-section">
-          <h4>About Us</h4>
-          <p>
-            Your trusted partner in delivering quality services and solutions.
-          </p>
+          <h4>About Me</h4>
+          <p>Trust me, there's nothing interesting in my life</p>
         </div>
         <div class="footer-section">
           <h4>Quick Links</h4>
           <ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#services">Services</a></li>
+            <li><a href="#capabilities">Capabilities</a></li>
+            <li><a href="#priority">Priority</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
         <div class="footer-section">
-          <h4>Follow Us</h4>
+          <h4>Follow Me</h4>
           <div class="social-links">
             <a href="#"><i class="fab fa-facebook"></i></a>
             <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.instagram.com/aliiueo/"
+              ><i class="fab fa-instagram"></i
+            ></a>
             <a href="#"><i class="fab fa-linkedin"></i></a>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2025 Your Company. All rights reserved.</p>
+        <p>&copy; 2025 Bob Company. All rights reserved.</p>
       </div>
     </footer>
 
     <script src="script.js"></script>
+    <script feather.replace();></script>
   </body>
 </html>
