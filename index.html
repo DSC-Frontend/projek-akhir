@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
     <!-- Navbar -->
     <nav class="navbar">
@@ -16,102 +18,238 @@
             <span class="bar"></span>
             <span class="bar"></span>
         </div>
-        <ul class="nav-menu">
+        <ul class="nav-menu ">
             <li><a href="#home" class="nav-link">Home</a></li>
-            <li><a href="#features" class="nav-link">Features</a></li>
-            <li><a href="#services" class="nav-link">Services</a></li>
-            <li><a href="#contact" class="nav-link">Contact</a></li>
+            <li><a href="#features" class="nav-link">About</a></li>
+            <li><a href="#services" class="nav-link">Discover</a></li>
         </ul>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>Welcome to Your Website</h1>
-            <p>Create something amazing with our services</p>
-            <a href="#contact" class="cta-button">Get Started</a>
+            <h1>Jelajah Keindahanan Pangalengan</h1>
+            <p>Pesona Alam dan Kesejukan Udara</p>
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section id="features" class="features">
-        <h2>Our Features</h2>
-        <div class="features-grid">
-            <div class="feature-card">
-                <i class="fas fa-rocket"></i>
-                <h3>Fast & Reliable</h3>
-                <p>Experience lightning-fast performance and reliable service.</p>
+    <!-- About Section -->
+    <section id="features" class="co-about">
+        <div class="co-tentang">
+            <div class="tentang-div1">
+                <h2>Pangalengan</h2>
+                <p>Pangalengan adalah sebuah kecamatan di Kabupaten Bandung, Jawa Barat, Indonesia. Pangalengan terletak
+                    40 km di selatan Kota Bandung atau sekitar 29 km dari ibu kota Kabupaten Bandung, Soreang.
+                    Pangalengan terkenal akan beberapa objek wisata, seperti Situ Cileunca, perkebunan teh dan kolam
+                    pemandian air panas Cibolang. <br><br>Pangalengan juga dikenal sebagai daerah pertanian, peternakan
+                    dan perkebunan. Terdapat beberapa perkebunan teh dan kini yang dikelola oleh PTPN. Pangalengan juga
+                    merupakan daerah penghasil susu sapi. Peternakan dan pengolahan susu di daerah Pangalengan dan
+                    daerah Bandung Selatan lainnya dikelola oleh Koperasi Peternakan Bandung Selatan Pangalengan (KPBS
+                    Pangalengan).</p>
             </div>
-            <div class="feature-card">
-                <i class="fas fa-shield-alt"></i>
-                <h3>Secure</h3>
-                <p>Your security is our top priority with advanced protection.</p>
-            </div>
-            <div class="feature-card">
-                <i class="fas fa-users"></i>
-                <h3>User Friendly</h3>
-                <p>Intuitive design that makes everything easier.</p>
-            </div>
-            <div class="feature-card">
-                <i class="fas fa-clock"></i>
-                <h3>24/7 Support</h3>
-                <p>Round-the-clock support whenever you need it.</p>
+            <div class="tentang-div2">
+                <img src="img/pangalengan.jpg" alt="">
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
+    <!-- Destinasi Section -->
     <section id="services" class="services">
-        <h2>Our Services</h2>
+        <h2>Ayo Jelajahi</h2>
+        <p>Temukan tempat-tempat yang ingin Anda ketahui</p>
         <div class="services-grid">
             <div class="service-card">
-                <img src="https://via.placeholder.com/300x200" alt="Service 1">
-                <h3>Service One</h3>
-                <p>Comprehensive solution for your needs.</p>
-                <a href="#" class="service-btn">Learn More</a>
+                <img src="img/situ-cileunca.jpg" alt="Destinasi 1">
+                <h3>Situ Cileunca</h3>
+                <a href="#" class="service-btn" onclick="showOverlay('overlay1')">Lihat lebih lanjut</a>
             </div>
             <div class="service-card">
-                <img src="https://via.placeholder.com/300x200" alt="Service 2">
-                <h3>Service Two</h3>
-                <p>Professional support and guidance.</p>
-                <a href="#" class="service-btn">Learn More</a>
+                <img src="img/nimo.jpg" alt="Destinasi 2">
+                <h3>NIMO Highland</h3>
+                <a href="#" class="service-btn" onclick="showOverlay('overlay2')">Lihat lebih lanjut</a>
             </div>
             <div class="service-card">
-                <img src="https://via.placeholder.com/300x200" alt="Service 3">
-                <h3>Service Three</h3>
-                <p>Innovative solutions for modern problems.</p>
-                <a href="#" class="service-btn">Learn More</a>
+                <img src="img/taman-langit.jpeg" alt="Destinasi 3">
+                <h3>Taman Langit</h3>
+                <a href="#" class="service-btn" onclick="showOverlay('overlay3')">Lihat lebih lanjut</a>
+            </div>
+            <div class="service-card">
+                <img src="img/hutan-pinus.jpeg" alt="Destinasi 4">
+                <h3>Hutan Pinus Rahong</h3>
+                <a href="#" class="service-btn" onclick="showOverlay('overlay4')">Lihat lebih lanjut</a>
+            </div>
+            <div class="service-card">
+                <img src="img/point-cukul.jpg" alt="Destinasi 5">
+                <h3>Sunrise Point Cukul</h3>
+                <a href="#" class="service-btn" onclick="showOverlay('overlay5')">Lihat lebih lanjut</a>
+            </div>
+            <div class="service-card">
+                <img src="img/riung.jpg" alt="Destinasi 6">
+                <h3>Nuansa Riung Gunung</h3>
+                <a href="#" class="service-btn" onclick="showOverlay('overlay6')">Lihat lebih lanjut</a>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <h2>Contact Us</h2>
-        <div class="contact-content">
-            <div class="contact-info">
-                <div class="contact-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <p>123 Business Street, City, Country</p>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-phone"></i>
-                    <p>+1 234 567 890</p>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <p>info@yourcompany.com</p>
-                </div>
+    <!-- Overlay -->
+    <div id="overlay1" class="overlay">
+        <div class="overlay-content">
+            <span class="close-btn" onclick="closeOverlay('overlay1')">&times;</span>
+            <img src="img/situ-cileunca.jpg" alt="situ-cileunca">
+            <h2>Situ Cileunca</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus porro recusandae odit quod odio deleniti
+                repellat ut veritatis dolores vel tempora facere iure aspernatur assumenda impedit minus, libero
+                perspiciatis minima aut quasi. Modi veniam omnis earum cum facere voluptate consequuntur minus
+                voluptatibus fugiat veritatis molestias eligendi eius, nesciunt consequatur. Ipsa omnis rerum inventore,
+                dicta perferendis perspiciatis porro exercitationem quis, facilis est quia autem illo ab sequi minus
+                nesciunt eos ullam culpa a temporibus beatae similique corporis fuga? Pariatur eveniet eos beatae
+                voluptas cum voluptates cumque obcaecati. Quae impedit asperiores quis itaque delectus minus voluptates
+                vel quasi, dicta provident nesciunt at, aspernatur quam natus ex porro harum animi veniam ducimus? At,
+                doloremque. Molestiae, voluptates vero blanditiis ipsam labore molestias in natus maxime placeat itaque
+                mollitia, debitis ipsa error provident at harum. Fugiat ea, doloremque harum doloribus ducimus obcaecati
+                quasi nihil aliquam pariatur expedita soluta cumque. Quidem, ipsum eius aliquid quo eveniet voluptatibus
+                excepturi pariatur! Repellat provident neque rem incidunt, explicabo delectus et sed amet consectetur
+                eos molestias error pariatur ea minima mollitia, debitis perferendis dolorum odit, veniam ipsum ab
+                voluptas earum? Reiciendis, laboriosam, iure hic dolore voluptatem excepturi modi fugiat commodi natus
+                ducimus at quos ipsa adipisci voluptate tempore facilis soluta.</p>
+        </div>
+    </div>
+
+    <div id="overlay2" class="overlay">
+        <div class="overlay-content">
+            <span class="close-btn" onclick="closeOverlay('overlay2')">&times;</span>
+            <img src="img/nimo.jpg" alt="nimo">
+            <h2>NIMO Highland</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus porro recusandae odit quod odio deleniti
+                repellat ut veritatis dolores vel tempora facere iure aspernatur assumenda impedit minus, libero
+                perspiciatis minima aut quasi. Modi veniam omnis earum cum facere voluptate consequuntur minus
+                voluptatibus fugiat veritatis molestias eligendi eius, nesciunt consequatur. Ipsa omnis rerum inventore,
+                dicta perferendis perspiciatis porro exercitationem quis, facilis est quia autem illo ab sequi minus
+                nesciunt eos ullam culpa a temporibus beatae similique corporis fuga? Pariatur eveniet eos beatae
+                voluptas cum voluptates cumque obcaecati. Quae impedit asperiores quis itaque delectus minus voluptates
+                vel quasi, dicta provident nesciunt at, aspernatur quam natus ex porro harum animi veniam ducimus? At,
+                doloremque. Molestiae, voluptates vero blanditiis ipsam labore molestias in natus maxime placeat itaque
+                mollitia, debitis ipsa error provident at harum. Fugiat ea, doloremque harum doloribus ducimus obcaecati
+                quasi nihil aliquam pariatur expedita soluta cumque. Quidem, ipsum eius aliquid quo eveniet voluptatibus
+                excepturi pariatur! Repellat provident neque rem incidunt, explicabo delectus et sed amet consectetur
+                eos molestias error pariatur ea minima mollitia, debitis perferendis dolorum odit, veniam ipsum ab
+                voluptas earum? Reiciendis, laboriosam, iure hic dolore voluptatem excepturi modi fugiat commodi natus
+                ducimus at quos ipsa adipisci voluptate tempore facilis soluta.</p>
+        </div>
+    </div>
+
+    <div id="overlay3" class="overlay">
+        <div class="overlay-content">
+            <span class="close-btn" onclick="closeOverlay('overlay3')">&times;</span>
+            <img src="img/taman-langit.jpeg" alt="taman-langit">
+            <h2>Taman Langit</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus porro recusandae odit quod odio deleniti
+                repellat ut veritatis dolores vel tempora facere iure aspernatur assumenda impedit minus, libero
+                perspiciatis minima aut quasi. Modi veniam omnis earum cum facere voluptate consequuntur minus
+                voluptatibus fugiat veritatis molestias eligendi eius, nesciunt consequatur. Ipsa omnis rerum inventore,
+                dicta perferendis perspiciatis porro exercitationem quis, facilis est quia autem illo ab sequi minus
+                nesciunt eos ullam culpa a temporibus beatae similique corporis fuga? Pariatur eveniet eos beatae
+                voluptas cum voluptates cumque obcaecati. Quae impedit asperiores quis itaque delectus minus voluptates
+                vel quasi, dicta provident nesciunt at, aspernatur quam natus ex porro harum animi veniam ducimus? At,
+                doloremque. Molestiae, voluptates vero blanditiis ipsam labore molestias in natus maxime placeat itaque
+                mollitia, debitis ipsa error provident at harum. Fugiat ea, doloremque harum doloribus ducimus obcaecati
+                quasi nihil aliquam pariatur expedita soluta cumque. Quidem, ipsum eius aliquid quo eveniet voluptatibus
+                excepturi pariatur! Repellat provident neque rem incidunt, explicabo delectus et sed amet consectetur
+                eos molestias error pariatur ea minima mollitia, debitis perferendis dolorum odit, veniam ipsum ab
+                voluptas earum? Reiciendis, laboriosam, iure hic dolore voluptatem excepturi modi fugiat commodi natus
+                ducimus at quos ipsa adipisci voluptate tempore facilis soluta.</p>
+        </div>
+    </div>
+
+    <div id="overlay4" class="overlay">
+        <div class="overlay-content">
+            <span class="close-btn" onclick="closeOverlay('overlay4')">&times;</span>
+            <img src="img/hutan-pinus.jpeg" alt="hutan-pinus">
+            <h2>Hutan Pinus Rahong</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus porro recusandae odit quod odio deleniti
+                repellat ut veritatis dolores vel tempora facere iure aspernatur assumenda impedit minus, libero
+                perspiciatis minima aut quasi. Modi veniam omnis earum cum facere voluptate consequuntur minus
+                voluptatibus fugiat veritatis molestias eligendi eius, nesciunt consequatur. Ipsa omnis rerum inventore,
+                dicta perferendis perspiciatis porro exercitationem quis, facilis est quia autem illo ab sequi minus
+                nesciunt eos ullam culpa a temporibus beatae similique corporis fuga? Pariatur eveniet eos beatae
+                voluptas cum voluptates cumque obcaecati. Quae impedit asperiores quis itaque delectus minus voluptates
+                vel quasi, dicta provident nesciunt at, aspernatur quam natus ex porro harum animi veniam ducimus? At,
+                doloremque. Molestiae, voluptates vero blanditiis ipsam labore molestias in natus maxime placeat itaque
+                mollitia, debitis ipsa error provident at harum. Fugiat ea, doloremque harum doloribus ducimus obcaecati
+                quasi nihil aliquam pariatur expedita soluta cumque. Quidem, ipsum eius aliquid quo eveniet voluptatibus
+                excepturi pariatur! Repellat provident neque rem incidunt, explicabo delectus et sed amet consectetur
+                eos molestias error pariatur ea minima mollitia, debitis perferendis dolorum odit, veniam ipsum ab
+                voluptas earum? Reiciendis, laboriosam, iure hic dolore voluptatem excepturi modi fugiat commodi natus
+                ducimus at quos ipsa adipisci voluptate tempore facilis soluta.</p>
+        </div>
+    </div>
+
+    <div id="overlay5" class="overlay">
+        <div class="overlay-content">
+            <span class="close-btn" onclick="closeOverlay('overlay5')">&times;</span>
+            <img src="img/point-cukul.jpg" alt="point-cukul">
+            <h2>Sunrise Point Cukul</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus porro recusandae odit quod odio deleniti
+                repellat ut veritatis dolores vel tempora facere iure aspernatur assumenda impedit minus, libero
+                perspiciatis minima aut quasi. Modi veniam omnis earum cum facere voluptate consequuntur minus
+                voluptatibus fugiat veritatis molestias eligendi eius, nesciunt consequatur. Ipsa omnis rerum inventore,
+                dicta perferendis perspiciatis porro exercitationem quis, facilis est quia autem illo ab sequi minus
+                nesciunt eos ullam culpa a temporibus beatae similique corporis fuga? Pariatur eveniet eos beatae
+                voluptas cum voluptates cumque obcaecati. Quae impedit asperiores quis itaque delectus minus voluptates
+                vel quasi, dicta provident nesciunt at, aspernatur quam natus ex porro harum animi veniam ducimus? At,
+                doloremque. Molestiae, voluptates vero blanditiis ipsam labore molestias in natus maxime placeat itaque
+                mollitia, debitis ipsa error provident at harum. Fugiat ea, doloremque harum doloribus ducimus obcaecati
+                quasi nihil aliquam pariatur expedita soluta cumque. Quidem, ipsum eius aliquid quo eveniet voluptatibus
+                excepturi pariatur! Repellat provident neque rem incidunt, explicabo delectus et sed amet consectetur
+                eos molestias error pariatur ea minima mollitia, debitis perferendis dolorum odit, veniam ipsum ab
+                voluptas earum? Reiciendis, laboriosam, iure hic dolore voluptatem excepturi modi fugiat commodi natus
+                ducimus at quos ipsa adipisci voluptate tempore facilis soluta.</p>
+        </div>
+    </div>
+
+    <div id="overlay6" class="overlay">
+        <div class="overlay-content">
+            <span class="close-btn" onclick="closeOverlay('overlay6')">&times;</span>
+            <img src="img/riung.jpg" alt="riung-gunung">
+            <h2>Nuansa Riung Gunung</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus porro recusandae odit quod odio deleniti
+                repellat ut veritatis dolores vel tempora facere iure aspernatur assumenda impedit minus, libero
+                perspiciatis minima aut quasi. Modi veniam omnis earum cum facere voluptate consequuntur minus
+                voluptatibus fugiat veritatis molestias eligendi eius, nesciunt consequatur. Ipsa omnis rerum inventore,
+                dicta perferendis perspiciatis porro exercitationem quis, facilis est quia autem illo ab sequi minus
+                nesciunt eos ullam culpa a temporibus beatae similique corporis fuga? Pariatur eveniet eos beatae
+                voluptas cum voluptates cumque obcaecati. Quae impedit asperiores quis itaque delectus minus voluptates
+                vel quasi, dicta provident nesciunt at, aspernatur quam natus ex porro harum animi veniam ducimus? At,
+                doloremque. Molestiae, voluptates vero blanditiis ipsam labore molestias in natus maxime placeat itaque
+                mollitia, debitis ipsa error provident at harum. Fugiat ea, doloremque harum doloribus ducimus obcaecati
+                quasi nihil aliquam pariatur expedita soluta cumque. Quidem, ipsum eius aliquid quo eveniet voluptatibus
+                excepturi pariatur! Repellat provident neque rem incidunt, explicabo delectus et sed amet consectetur
+                eos molestias error pariatur ea minima mollitia, debitis perferendis dolorum odit, veniam ipsum ab
+                voluptas earum? Reiciendis, laboriosam, iure hic dolore voluptatem excepturi modi fugiat commodi natus
+                ducimus at quos ipsa adipisci voluptate tempore facilis soluta.</p>
+        </div>
+    </div>
+
+    <!-- Kuliner -->
+    <section class="co-kuliner">
+        <h2>Oleh-oleh Pangalengan</h2>
+        <div class="grid-kuliner">
+            <div class="card-kuliner">
+                <img src="img/kuliner1.jpg" alt="kuliner1">
             </div>
-            <form>
-                <input type="text" placeholder="Name" required>
-                <input type="email" placeholder="Email" required>
-                <textarea placeholder="Message" required></textarea>
-                <button type="submit" class="cta-button">Send Message</button>
-            </form>
+            <div class="card-kuliner">
+                <img src="img/kuliner2.jpg" alt="kuliner2">
+            </div>
+            <div class="card-kuliner">
+                <img src="img/kuliner3.jpg" alt="kuliner3">
+            </div>
+            <div class="card-kuliner">
+                <img src="img/kuliner4.jpg" alt="kuliner4">
+            </div>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
         <div class="footer-content">
             <div class="footer-section">
@@ -122,9 +260,8 @@
                 <h4>Quick Links</h4>
                 <ul>
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#features">About</a></li>
+                    <li><a href="#services">Discover</a></li>
                 </ul>
             </div>
             <div class="footer-section">
@@ -144,4 +281,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>

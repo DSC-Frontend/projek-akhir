@@ -25,7 +25,7 @@ window.addEventListener('scroll', () => {
 
 // Smooth scroll for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
+    anchor.addEventListener('click', function (e) {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
@@ -46,3 +46,16 @@ window.addEventListener('scroll', () => {
         navbar.style.boxShadow = 'none';
     }
 });
+
+// Overlay
+function showOverlay(overlayId) {
+    document.getElementById(overlayId).style.display = 'flex';
+    document.body.classList.add('no-scroll');
+    document.body.classList.remove('scroll');
+}
+
+function closeOverlay(overlayId) {
+    document.getElementById(overlayId).style.display = 'none';
+    document.body.classList.add('scroll');
+    document.body.classList.remove('no-scroll');
+}
