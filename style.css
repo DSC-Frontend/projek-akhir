@@ -67,7 +67,7 @@ body {
 }
 
 /* Hero Section */
-.hero {
+.kitchen {
     height: 100vh;
     display: flex;
     align-items: center;
@@ -78,12 +78,12 @@ body {
     padding: 0 1rem;
 }
 
-.hero-content h1 {
+.kitchen-hero h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
 }
 
-.hero-content p {
+.kitchen-hero p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
 }
