@@ -12,7 +12,7 @@ html {
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: #black;
 }
 
 /* Navbar Styles */
@@ -20,7 +20,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #fff;
+    background-color: #FFCDB2;
     padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
@@ -49,7 +49,7 @@ body {
 }
 
 .nav-link:hover {
-    color: #3498db;
+    color: #E5989B;
 }
 
 .hamburger {
@@ -73,8 +73,8 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: linear-gradient(135deg, #6c5ce7, #a8c0ff);
-    color: white;
+    background: linear-gradient(135deg, #B5828C, #E17564);
+    color: #F7CFD8;
     padding: 0 1rem;
 }
 
@@ -96,7 +96,7 @@ section {
 h2 {
     text-align: center;
     margin-bottom: 3rem;
-    color: #2c3e50;
+    color: #FFCDB2;
     font-size: 2.5rem;
 }
 
@@ -112,7 +112,7 @@ h2 {
 .feature-card {
     text-align: center;
     padding: 2rem;
-    background: white;
+    background: #FFB4A2;
     border-radius: 10px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
@@ -124,18 +124,18 @@ h2 {
 
 .feature-card i {
     font-size: 2.5rem;
-    color: #3498db;
+    color: #black;
     margin-bottom: 1rem;
 }
 
 .feature-card h3 {
     margin-bottom: 1rem;
-    color: #2c3e50;
+    color: #1D1616;
 }
 
 /* Services Section */
 .services {
-    background-color: #f9f9f9;
+    background-color: #A94A4A;
 }
 
 .services-grid {
@@ -150,7 +150,7 @@ h2 {
     background: white;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 3px 10px #FFFBE6;
     transition: transform 0.3s ease;
 }
 
@@ -174,7 +174,7 @@ h2 {
     display: inline-block;
     padding: 0.5rem 1rem;
     margin: 0 1rem 1rem;
-    background-color: #3498db;
+    background-color: #white;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -182,7 +182,7 @@ h2 {
 }
 
 .service-btn:hover {
-    background-color: #2980b9;
+    background-color: #white;
 }
 
 /* Contact Section */
@@ -208,7 +208,7 @@ h2 {
 
 .contact-item i {
     font-size: 1.5rem;
-    color: #3498db;
+    color: #black;
 }
 
 form {
@@ -247,7 +247,7 @@ textarea {
 
 /* Footer */
 footer {
-    background-color: #2c3e50;
+    background-color: #F2B28C;
     color: white;
     padding: 3rem 2rem 1rem;
 }
